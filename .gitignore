@@ -30,3 +30,26 @@
 *.exe
 *.out
 *.app
+
+# Ignore Visual Studio temporary files
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+
+# Ignore Visual Studio database files
+*.VC.db
+*.VC-Joori.db
+
+# Ignore generated files
+*.ipch
+*.obj
+*.exe
+*.dll
+Debug/
+Release/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+

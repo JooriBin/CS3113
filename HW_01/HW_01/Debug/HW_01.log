@@ -1,12 +1,15 @@
 ﻿  main.cpp
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         with
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         [
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:             T=float
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         ]
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         with
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         [
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:             T=float
-C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         ]
-  HW_01.vcxproj -> C:\Users\jory2\OneDrive\سطح المكتب\Fall 2024\CS3113\HW_01\Debug\HW_01.exe
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         with
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         [
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:             T=float
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(193,56): warning C4244:         ]
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         with
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         [
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:             T=float
+C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\HW_01\main.cpp(194,56): warning C4244:         ]
+  ShaderProgram.cpp
+  Generating Code...
+  LINK : C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\Debug\HW_01.exe not found or not built by the last incremental link; performing full link
+  HW_01.vcxproj -> C:\Users\jory2\Desktop\Fall2024\CS3113\HW_01\Debug\HW_01.exe
