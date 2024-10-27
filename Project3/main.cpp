@@ -278,7 +278,7 @@ void initialise()
     // ––––– PLAYER (FOXY) ––––– //
     // Existing
     g_state.player = new Entity();
-    g_state.player->set_position(glm::vec3(0.0f));
+    g_state.player->set_position(glm::vec3(0.0f, 2.0f, 0.0f));
     g_state.player->set_movement(glm::vec3(0.0f));
     g_state.player->m_speed = 1.0f;
     g_state.player->set_acceleration(glm::vec3(0.0f, -0.905f, 0.0f));
@@ -391,7 +391,7 @@ void process_input()
         }
         
     }   
-    else if (!key_state[SDL_SCANCODE_LEFT] && !key_state[SDL_SCANCODE_RIGHT])
+    else 
     {
         g_state.player->set_acceleration_y(-0.1f);
         g_state.player->m_animation_frames = g_state.player->m_frames_down;
