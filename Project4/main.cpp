@@ -415,11 +415,8 @@ void update()
                 dis_enemy++;
         }
 
-        // Camera Follows the player
-        if (g_game_state.player->is_active() && dis_enemy != 3) {
-            g_view_matrix = glm::translate(g_view_matrix, glm::vec3(-g_game_state.player->get_position().x, 0.0f, 0.0f));
+        g_view_matrix = glm::translate(g_view_matrix, glm::vec3(-g_game_state.player->get_position().x, 0.0f, 0.0f));
 
-        }
 
 }
 
@@ -429,8 +426,22 @@ void render()
     glClear(GL_COLOR_BUFFER_BIT);
 
     if (!g_game_state.player->is_active()) {
-        draw_text(&g_shader_program, g_font_texture_id, "YOU LOSE", 0.5f, 0.05f,
-            glm::vec3(-2.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "Y", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 1.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "O", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 1.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "U", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 0.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, " ", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x), 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "L", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 0.5f , 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "O", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) +1.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "S", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 1.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "E", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 2.0f, 2.0f, 0.0f));
     }
     int dis_enemy = 0;
     for (int i = 0; i < ENEMY_COUNT; i++) {
@@ -438,8 +449,22 @@ void render()
             dis_enemy++;
     }
     if (dis_enemy == 3) {
-        draw_text(&g_shader_program, g_font_texture_id, "YOU WIN:)", 0.4f, 0.05f,
-            glm::vec3(-2.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "Y", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 1.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "O", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 1.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "U", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) - 0.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, " ", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x), 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "W", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 0.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "I", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 1.0f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "N", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 1.5f, 2.0f, 0.0f));
+        draw_text(&g_shader_program, g_font_texture_id, "!", 0.5f, 0.05f,
+            glm::vec3((g_game_state.player->get_position().x) + 2.0f, 2.0f, 0.0f));
     }
 
     g_game_state.map->render(&g_shader_program);
